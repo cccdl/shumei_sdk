@@ -22,7 +22,7 @@ trait Request
             'timeout' => $this->timeout,
         ]);
 
-        $response = $client->post($url, ['form_params' => $param]);
+        $response = $client->post($url, ['json' => $param]);
 
         if ($response->getStatusCode() != 200) {
             throw new cccdlException('请求失败: ' . $response->getStatusCode());
@@ -30,7 +30,7 @@ trait Request
 
         $arr = json_decode($response->getBody(), true);
 
-        if (!isset($arr['code']) || $arr['code'] != 200) {
+        if (!isset($arr['code']) || $arr['code'] != 1100) {
             throw new cccdlException('请求结果异常' . $response->getBody());
         }
 
