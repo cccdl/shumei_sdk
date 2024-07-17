@@ -1,5 +1,7 @@
 <?php
 
+namespace cccdl\shumei_sdk\test\Text;
+
 use cccdl\shumei_sdk\Exception\cccdlException;
 use cccdl\shumei_sdk\Test\TestAccount;
 use GuzzleHttp\Exception\GuzzleException;

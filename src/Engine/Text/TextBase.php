@@ -1,5 +1,7 @@
 <?php
 
+namespace cccdl\shumei_sdk\Engine\Text;
+
 use cccdl\shumei_sdk\Traits\Request;
 
 class TextBase
