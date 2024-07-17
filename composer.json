@@ -1,0 +1,16 @@
+{
+    "name": "cccdl/shumei_sdk",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "cccdl\\shumei_sdk\\": "./src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.6.x-dev"
+    }
+}
